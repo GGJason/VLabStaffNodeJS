@@ -1,0 +1,26 @@
+{
+  "name": "vlabstaffnodejs",
+  "version": "1.0.0",
+  "description": "V.Lab工讀生管理系統Node.js版本前後端",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GGJason/VLabStaffNodeJS.git"
+  },
+  "keywords": [
+    "mysql",
+    "lab"
+  ],
+  "author": "V.Lab Staff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GGJason/VLabStaffNodeJS/issues"
+  },
+  "homepage": "https://github.com/GGJason/VLabStaffNodeJS#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
