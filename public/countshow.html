@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>人數統計 | V.Lab Staff</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<meta lang="zh-Hant">
+		<meta name="description" content="臺大土木系V.Lab工讀生的工作專區">
+		<script src="js/jquery.min.js"></script>
+		<script src="https://cdn.rawgit.com/eligrey/FileSaver.js/e9d941381475b5df8b7d7691013401e171014e89/FileSaver.min.js"></script>
+	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="./css/countshow.css" type="text/css" rel="stylesheet"/>
+		<script src="./js/d3.min.js"></script>
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+					<script src="js/header.js"></script>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<script type="text/javascript" src="js/menuChangeable.js"></script>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+							<h1>人數統計</h1>
+							</header>
+							<section>
+								<button onclick="stacked();">Stacked</button>
+								<button onclick="list();">List</button>
+								<!--<button onclick="heat();">Heat</button>	
+								<button onclick="monthheat();">Monthly Heat</button>-->
+								<div id="show" >
+									<!--<table>
+										<div>
+											<div class="bar2013" style="display:inline-block">2013</div>
+											<div class="bar2014" style="display:inline-block">2014</td>
+											<div class="bar2015" style="display:inline-block">2015</td>
+											<div class="bar2016" style="display:inline-block">2016</td>
+											<div class="bar2017" style="display:inline-block">2017</td>
+										</div>
+									</table>-->
+									<div id="showOption" ></div>
+									<div id="showContent"><svg width="960" height="500"></svg>
+									</div>
+									<button onclick="exportImg();">Download</button>
+								</div>
+								<div id="table" class="count">
+								</div>
+							</section>
+						</div>
+					</div>
+		<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/skel.min.js"></script>
+			<script src="js/util.js"></script>
+			<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
+			<script src="js/main.js"></script>
+			<script src="./js/countshow.js"></script>
+
+	</body>
+</html>
