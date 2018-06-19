@@ -15,14 +15,14 @@
 				var account = form.account.value;
 				var password = form.password.value;
 				//console.log({user: account, password: md5(password)});
-				$.post('./login.php?redirect=/',{user: account, password: md5(password)},function(msg){
+				$.post('./api/user/login',{user: account, password: password},function(msg){
 					console.log(msg);
 					if(msg.indexOf('Username or password is error!') !== -1){
 						form.password.value = '';
 						alert('Username or password is error!');
 					}
 					else{
-						document.location.href='https://vlabstaff.caece.net';
+						document.location.href='/';
 					}
 				});
 				return false;

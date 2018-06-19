@@ -132,7 +132,7 @@ rect:first-child {
 						<div class="inner">
 							<header>
 								<h1>人數統計</h1>
-								<script>$.get("./auth.php?check").done(function(){$("h1:last-of-type").append("<h4><a href='http://10.12.4.195:7001/'>你找不到的監視器網址</a></h4>");})</script>
+								<script>$.get("./api/auth/").done(function(){$("h1:last-of-type").append("<h4><a href='http://10.12.4.195:7001/'>你找不到的監視器網址</a></h4>");})</script>
 							</header>
 							<section>
 							<div id="counter">
@@ -207,7 +207,7 @@ rect:first-child {
 			$("html").ready(function(){
 				var today = new Date();
 				$.ajax({
-					url: "./count.php?check",
+					url: "./api/count/latest",
 					type:"GET",
 					success:function(data){
 						$(".today").val(data["date"]);
@@ -221,12 +221,10 @@ rect:first-child {
 			});
 			function dateChangeListener(){
 				$.ajax({
-					url: "./count.php",
+					url: "/api/count/date/"+$("#date").val(),
 					type:"GET",
-					data:{
-						date:$("#date").val(),
-					},
 					success:function(response){
+						console.log(response)
 						$("#count").val(response);
 					},
 					error:function(xhr){

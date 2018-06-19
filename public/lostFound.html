@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>失物招領 | V.Lab Staff</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="./js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/lostFound.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="./css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="./css/ie8.css" /><![endif]-->
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/main.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+					<script src="./js/header.js"></script>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<script type="text/javascript" src="./js/menuChangeable.js"></script>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>失物招領</h1>
+							<input type="button" onclick="inputLost()" name="inputLost" value="登記失物">
+							<div id="inputLostForm">
+								<table>
+									<tbody>
+										<tr><td>失物相片</td><td>
+											<div id="upload">
+												<input id="foundFile" type="file" accept="image/*;capture=camera"/>
+											</div>
+										</td></tr>
+										<tr><td>失物編號</td><td id="foundId"></td></tr>
+										<tr><td>失物名稱</td><td id="foundName">
+											<input type="text" name="foundName-input">	
+										</td></tr>
+										<tr><td>時間戳記</td><td id="foundTime"></td></tr>
+										<tr><td>發現人</td><td id="foundUser"></td></tr>
+										<tr><td>備註</td><td id="foundDiscription">
+											<textarea name="foundDiscription-input" placeholder="外型、可能失主、..."></textarea>
+										</td></tr>
+										<tr><td></td><td id="foundSubmit">
+											<input type="button" onclick="submit()" name="foundSubmit-input" class="special" value="送出">
+										</td></tr>
+									</tbody>
+								</table>
+							</div>
+							<div id="gallery">
+							</div>
+						</div>
+						<script type="text/javascript" src="./js/lostFound.js"></script>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="./js/jquery.min.js"></script>
+			<script src="./js/skel.min.js"></script>
+			<script src="./js/util.js"></script>
+			<!--[if lte IE 8]><script src="./js/ie/respond.min.js"></script><![endif]-->
+			<script src="./js/main.js"></script>
+
+	</body>
+</html>

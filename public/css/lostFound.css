@@ -1,0 +1,33 @@
+#gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#gallery > div{
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	width: 18em;
+	height: 18em;
+	margin: 0.5em;
+	border: 0.5em dashed lightgray;
+	border-radius: 1em;
+	position: relative;
+
+}
+#gallery > div > img{
+	width: auto;
+	height: 100%;
+	background: azure;
+}
+.photoHover{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	padding: 1em;
+	text-align: center;
+	background: black;
+	opacity: 0.6;
+	color: white;
+}
